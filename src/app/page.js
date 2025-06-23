@@ -44,7 +44,7 @@ export default function Home() {
     }
   ];
 
-  const whatsappNumber = "6281288885605";
+  const whatsappNumber = "6281944375070";
   const createWhatsAppLink = (message) => {
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
@@ -143,14 +143,6 @@ export default function Home() {
                 <span className="text-xs md:text-base">🔥 Brand Terpercaya Heat n Eat</span>
               </div>
               
-              <h1 className="text-3xl md:text-6xl lg:text-8xl font-black text-gray-800 mb-4 md:mb-6 leading-tight">
-                <span className="bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
-                  Rasa
-                </span>
-                <br />
-                <span className="text-gray-800">Rumah</span>
-              </h1>
-              
               <h2 className="text-xl md:text-3xl lg:text-5xl text-gray-700 mb-4 md:mb-6 font-bold leading-tight">
                 Masakan Rumahan Premium
                 <span className="block text-red-600 mt-2">
@@ -215,23 +207,15 @@ export default function Home() {
                 <div className="absolute -top-3 md:-top-6 -left-3 md:-left-6 w-12 md:w-24 h-12 md:h-24 bg-yellow-400 rounded-full opacity-80 animate-pulse"></div>
                 <div className="absolute -bottom-2 md:-bottom-4 -right-2 md:-right-4 w-8 md:w-16 h-8 md:h-16 bg-red-400 rounded-full opacity-70"></div>
                 
-                {/* Main image container */}
-                <div className="relative bg-white rounded-3xl p-3 md:p-8 shadow-2xl transform group-hover:rotate-3 transition-all duration-700 border-2 md:border-8 border-gradient-to-r from-orange-200 to-red-200">
-                  <div className="relative w-56 md:w-96 h-56 md:h-96 rounded-2xl overflow-hidden shadow-xl">
+                {/* Main logo container */}
+                <div className="relative flex items-center justify-center">
+                  <div className="w-64 md:w-80 h-32 md:h-40 relative">
                     <Image 
-                      src="/menu1.png" 
-                      alt="Heat n Eat Product" 
+                      src="/logo.png" 
+                      alt="Rasa Rumah Logo" 
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="object-contain group-hover:scale-110 transition-transform duration-700"
                     />
-                  </div>
-                  
-                  {/* Floating badges with proper z-index */}
-                  <div className="absolute -top-2 md:-top-4 -right-2 md:-right-4 bg-red-500 text-white px-2 md:px-6 py-1 md:py-3 rounded-full font-bold shadow-lg transform rotate-12 text-xs md:text-base z-10">
-                    🔥 Best Seller
-                  </div>
-                  <div className="absolute -bottom-3 md:-bottom-6 -left-3 md:-left-6 bg-green-500 text-white px-2 md:px-6 py-1 md:py-3 rounded-full font-bold shadow-lg text-xs md:text-base z-10">
-                    ✅ Tanpa Pengawet
                   </div>
                 </div>
               </div>
@@ -680,13 +664,17 @@ export default function Home() {
                   📱 WhatsApp
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/rasa.rumah.group?igsh=Znh5dms5aHJub2Zz"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 px-6 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   📷 Instagram
                 </a>
                 <a
-                  href="#"
+                  href="https://www.tiktok.com/@rasa.rumah.group?_t=ZS-8xRKkgJoMzM&_r=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-black hover:bg-gray-800 px-6 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   🎵 TikTok
